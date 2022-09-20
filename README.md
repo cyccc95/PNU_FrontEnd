@@ -6,6 +6,7 @@
 
 ### 22.09.20
 + HTML tag
++ 표준 https://html.spec.whatwg.org/multipage/
 
 ## 환경설정
 + VScode 설치
