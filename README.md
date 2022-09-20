@@ -7,9 +7,15 @@
 ### 22.09.20
 + HTML tag
 + 표준 https://html.spec.whatwg.org/multipage/
++ 참고 
+  + https://www.w3schools.com/
+  + https://developer.mozilla.org/ko/
+       
 
 ## 환경설정
 + VScode 설치
 + git 설치
 + github 접속 후 레포지토리 생성
 + VScode에서 git clone
+
+<!-- 미리보기 ctrl + shift + v -->
