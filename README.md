@@ -10,12 +10,13 @@
 + 참고 
   + https://www.w3schools.com/
   + https://developer.mozilla.org/ko/
+  + https://emmet.io/
+
+### 22.09.21
++ HTML Semantic Tag
++ CSS 기초
        
 
-## 환경설정
-+ VScode 설치
-+ git 설치
-+ github 접속 후 레포지토리 생성
-+ VScode에서 git clone
+
 
 <!-- 미리보기 ctrl + shift + v -->

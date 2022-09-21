@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 시맨틱 태그</title>
+  <style>
+    body {
+      padding: 10px;
+      
+    }
+    header {
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: coral;
+    }
+    nav, section {
+      margin: 10px;
+     
+    }
+    nav > ul {
+      list-style: none;
+      
+    }
+    section > h1 {
+      padding: 5px;
+      background-color: antiquewhite;
+      box-shadow: 3px 3px 3px grey;
+      border-radius: 10px;
+            
+    }
+    section > ul {
+      padding-left: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- (div.class$)*6 -->
+  <!-- (div.dvc$>h1+ul>li.lic$)*6 -->
+  <!-- (div.dvc$>ul>li#lid$*3)*6 -->
+  <header>
+    최한수
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#sid1">개인정보</a></li>
+      <li><a href="#sid2">학력사항</a></li>
+      <li><a href="#sid3">자격사항</a></li>
+      <li><a href="#sid4">자기소개</a></li>
+      <li><a href="#sid5">참고사이트</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="sid1">
+      <h1>개인정보</h1>
+      <ul>
+        <li class="idc1">이메일</li>
+        <li class="idc2">전화번호</li>
+      </ul>
+    </section>
+    <section id="sid2">
+      <h1>학력사항</h1>
+      <ul>
+        <li class="idc1">대학교</li>
+        <li class="idc2">고등학교</li>
+      </ul>
+    </section>
+    <section id="sid3">
+      <h1>자격사항</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid4">
+      <h1>자기소개</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid5">
+      <h1>참고사이트</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <footer>
+      
+    </footer>
+  </main>
+</body>
+</html>
