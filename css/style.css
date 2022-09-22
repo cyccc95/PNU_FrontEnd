@@ -1,0 +1,53 @@
+/* navbar */
+.navbar {
+  width: 100%;
+  
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo {
+  
+}
+.navbar-menu {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+/* title */
+.title {
+  
+  text-align: center;
+  margin: auto 50px;
+  padding: 50px;
+}
+.title-name {
+  padding: 20px;
+}
+.title-content {
+  width: 50%;
+  margin: auto;
+}
+
+/* main-content */
+.main-content {
+  /* width: 80%; */
+  
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.main-html, .main-css, .main-js, .main-react {
+  width: 15%;
+  padding: 10px;
+}
+
+/* footer */
+.footer {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  
+}
