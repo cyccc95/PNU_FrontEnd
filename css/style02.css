@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E38B29;
+  color: white;
+}
+.nav-logo {
+  font-size: 40px;
+  margin: 20px;
+}
+.nav-menu {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-menu > div {
+  margin-right: 20px;
+}
+.nav-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* header */
+header {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  background-color: #F1A661;
+}
+.header-title {
+  width: 30%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.header-content {
+  width: 70%;
+  font-size: 15px;
+}
+
+/* main */
+main {
+  text-align: center;
+  display: flex;
+  background-color: #FFD8A9;
+}
+.main-item {
+  width: 25%
+}
+.main-title {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+.main-content {
+  font-size: 15px;
+  margin: 10px;
+}
+main img {
+  border-radius: 50%;
+}
+
+
+/* footer */
+footer {
+  padding: 20px 60px;
+  background-color: #FDEEDC;
+  display: flex;
+  align-items: center;
+}
+footer > div {
+  width: 30%;
+  text-align: center;
+  padding: 30px;
+}
+footer > ul {
+  width: 70%;
+}
+footer > ul > li{
+  list-style: none;
+  
+}

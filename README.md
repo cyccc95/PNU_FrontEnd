@@ -15,6 +15,9 @@
 ### 22.09.21
 + HTML Semantic Tag
 + CSS 기초
+
+### 22.09.22
++ CSS 실습
        
 
 
