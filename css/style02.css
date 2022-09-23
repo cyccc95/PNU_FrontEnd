@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  height: 100%;
+  font-family: 'Do Hyeon', sans-serif;
+  
+}
+li {
+  list-style: none;
 }
 
 /* navbar */
@@ -13,61 +16,68 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   background-color: #E38B29;
   color: white;
+  position: sticky;
+  top: 0;
 }
 .nav-logo {
   font-size: 40px;
-  margin: 20px;
 }
 .nav-menu {
   font-size: 30px;
-  display: flex;
-  justify-content: space-around;
+  display: flex;  
 }
-.nav-menu > div {
-  margin-right: 20px;
+.nav-menu li {
+  margin: 0 20px;
+}
+.nav-menu li:hover {
+  color: red;
 }
 .nav-icon {
-  font-size: 30px;
-  margin-right: 20px;
+ font-size: 30px; 
 }
 
 /* header */
 header {
-  padding: 20px 60px;
   display: flex;
   align-items: center;
+  padding: 20px;
+  text-align: center;
   background-color: #F1A661;
 }
 .header-title {
-  width: 30%;
+  width: 40%;
   color: white;
-  font-size: 50px;
-  text-align: center;
+  font-size: 40px;
 }
 .header-content {
-  width: 70%;
-  font-size: 15px;
+  width: 60%;
+  font-size: 20px;
 }
 
 /* main */
 main {
+  padding: 20px;
   text-align: center;
   display: flex;
+  justify-content: space-around;
   background-color: #FFD8A9;
 }
 .main-item {
-  width: 25%
+  width: 200px
 }
 .main-title {
-  font-size: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: white;
-  margin: 10px;
 }
+
 .main-content {
-  font-size: 15px;
-  margin: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
 }
 main img {
   border-radius: 50%;
@@ -76,20 +86,44 @@ main img {
 
 /* footer */
 footer {
-  padding: 20px 60px;
+  padding: 20px;
   background-color: #FDEEDC;
   display: flex;
   align-items: center;
 }
 footer > div {
-  width: 30%;
+  margin: 0 30px;
+  width: 40%;
   text-align: center;
-  padding: 30px;
+  font-size: 30px;
 }
 footer > ul {
-  width: 70%;
+  width: 60%;
+  font-size: 20px;
 }
-footer > ul > li{
-  list-style: none;
-  
+footer li {
+  margin-bottom: 3px;
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  .main-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    margin-bottom: 15px;
+  }
 }
