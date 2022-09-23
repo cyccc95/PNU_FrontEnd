@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for 연습</title>
+</head>
+<body>
+  <!-- <form method="get" action="a.html"> get으로 하면 주소창에 다 표시됨 -->
+  <form method="post" action="a.html">
+    <div>
+      <label for="dtxt1">이름 : </label>
+      <input type="text" id="dtxt1" name="txt1" placeholder="이름을 입력하세요"> 
+    </div>
+    <div>
+      <label for="dtxt2">e-mail : </label>
+      <input type="email" id="dtxt2" name="txt2" placeholder="e-mail"> 
+    </div>
+    <div>
+      <label for="dtxt3">날짜 : </label>
+      <input type="date" id="dtxt3" name="txt3"> 
+    </div>
+    <div>
+      성별 : 
+      <label for="r1">남</label> <!--label 쓰면 글자 눌러도 체크됨-->
+      <input type="radio" id="r1" name="gender"> 
+      <label for="r2">여</label>
+      <input type="radio" id="r2" name="gender"> 
+    </div> <!--여러개중 하나 선택하는 radio는 name이 같아야함-->
+    <input type="submit" value="확인"> <!--form 안의 것을 action으로 넘겨줌-->
+    <input type="reset" value="취소">
+
+  </form>
+</body>
+</html>
