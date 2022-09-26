@@ -40,6 +40,7 @@
 
 ### 22.09.26
 + HTML, CSS 복습
++ Javascript 기초 
        
 
 
