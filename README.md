@@ -10,11 +10,25 @@
 + 참고 
   + https://www.w3schools.com/
   + https://developer.mozilla.org/ko/
+  + https://www.advancedwebranking.com/seo/html-study/
   + https://emmet.io/
 
 ### 22.09.21
 + HTML Semantic Tag
 + CSS 기초
++ 참고
+  + https://mycolor.space/
+  + https://colorhunt.co/
+  + https://www.photopea.com/
+  + https://fontawesome.com/
+  + https://fonts.google.com/
+  + https://cssgradient.io/
+  + https://www.shapedivider.app/
+  + https://haikei.app/
+  + https://coolbackgrounds.io/
+  + https://dribbble.com/
+  + https://www.sliderrevolution.com/resources/css-forms/
+  + https://yesviz.com/devices.php
 
 ### 22.09.22
 + CSS 실습
@@ -23,6 +37,9 @@
 + CSS 반응형 웹
 + github pages
 + HTML form
+
+### 22.09.26
++ HTML, CSS 복습
        
 
 
