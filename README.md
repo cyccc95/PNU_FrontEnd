@@ -41,6 +41,12 @@
 ### 22.09.26
 + HTML, CSS 복습
 + Javascript 기초 
+
+### 22.09.27
++ js로 html 요소 생성, 찾기
++ Hoisting
++ Variable
++ 반복문 for, for in, for each, for of
        
 
 
