@@ -12,56 +12,21 @@
   <!-- 외부 javascript 링크 -->
   <!-- <script src="js02.js"></script> -->
   <script src="js02_1.js"></script>
-  <!-- 내부 javascript -->
-  <script>
-    // alert("Hello wolrd!");
-    // console.log("Hello world!");
-  </script>
 </head>
 <body>
   <div class="root">
-    <nav>
+    <header>
       자바스크립트 연습
-    </nav>
+    </header>
     <main>
-      <section id="msg">
-        <form>
-
-        </form>
-      </section>
-      <section id="form">
-        <div>
-          <label for="d1">1</label>
-          <input type="radio" name="diceNum" id="d1" value="1">
-        </div>
-        <div>
-          <label for="d2">2</label>
-          <input type="radio" name="diceNum" id="d2" value="2">
-        </div>
-        <div>
-          <label for="d3">3</label>
-          <input type="radio" name="diceNum" id="d3" value="3">
-        </div>
-        <div>
-          <label for="d4">4</label>
-          <input type="radio" name="diceNum" id="d4" value="4">
-        </div>
-        <div>
-          <label for="d5">5</label>
-          <input type="radio" name="diceNum" id="d5" value="5">
-        </div>
-        <div>
-          <label for="d6">6</label>
-          <input type="radio" name="diceNum" id="d6" value="6">
-        </div>
-      </section>
-      <section id="btns">
-        <button id="btn1" onclick="show();">
-          주사위 눈 맞추기
+      <section id="diceSection"></section>
+      <section id="formSection"></section>
+      <section id="answer"></section>
+      <section id="btnSection">
+        <button id="btn" onclick="show();">
+          주사위 눈 맞추기 게임
         </button>
-        
       </section>
-      
     </main>
   </div>
 </body>
