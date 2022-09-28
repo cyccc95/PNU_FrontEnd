@@ -4,13 +4,12 @@
   box-sizing: border-box;
   font-family: 'Dongle', sans-serif;
 }
-nav {
+header {
   font-size: 3rem;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
 
   background-color: #1C6758;
   color: #eef2e6;
@@ -19,52 +18,64 @@ nav {
 main {
   display: flex;
   flex-direction: column;
+  height: 90vh;
 }
 
-#msg {
+#diceSection {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 100px;
-  height: 200px;
-}
-.divMsg {
-  font-size: 2rem;
-  width: 50vw;
-  height: 20vh;
-  max-width: 200px;
-  max-height: 50px;
-  margin-top: 2vh;
-  background-color: #3d8361;
-  color: #eef2e6;
-  border: none;
-  border-radius: 10px;
+  height: 30%;
 }
 
-#form {
+#formSection {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  height: 15%;
 }
 
-#btns {
-  height: 90vh;
+#formSection form {
+  display: flex;
+  flex-direction: row;
+}
+
+#formSection form div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#formSection label {
+  font-size: 30px;
+}
+
+#answer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 15%;
+  display: none;
+}
+
+#btnSection {
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: 100px;
-  
 }
 button {
   font-size: 2rem;
   border: none;
   border-radius: 10px;
-  margin-top: 2vh;
   width: 50vw;
   height: 20vh;
   max-width: 200px;
   max-height: 50px;
-    
   background-color: #3d8361;
   color: #eef2e6;
 }
@@ -74,10 +85,4 @@ button:hover, button:active {
   color: #3d8361;
 }
 
-#form div{
-  font-size: 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
 
