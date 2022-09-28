@@ -48,9 +48,9 @@
 + Variable
 + 반복문 for, for in, for each, for of
        
-### 22.09.25
+### 22.09.28
 + js 실습
-+ 주사위 만들기
++ 주사위 게임 만들기
 
 
 <!-- 미리보기 ctrl + shift + v -->
