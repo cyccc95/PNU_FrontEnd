@@ -10,7 +10,8 @@
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
   <!-- 외부 javascript 링크 -->
-  <script src="js02.js"></script>
+  <!-- <script src="js02.js"></script> -->
+  <script src="js02_1.js"></script>
   <!-- 내부 javascript -->
   <script>
     // alert("Hello wolrd!");
@@ -23,15 +24,44 @@
       자바스크립트 연습
     </nav>
     <main>
+      <section id="msg">
+        <form>
+
+        </form>
+      </section>
+      <section id="form">
+        <div>
+          <label for="d1">1</label>
+          <input type="radio" name="diceNum" id="d1" value="1">
+        </div>
+        <div>
+          <label for="d2">2</label>
+          <input type="radio" name="diceNum" id="d2" value="2">
+        </div>
+        <div>
+          <label for="d3">3</label>
+          <input type="radio" name="diceNum" id="d3" value="3">
+        </div>
+        <div>
+          <label for="d4">4</label>
+          <input type="radio" name="diceNum" id="d4" value="4">
+        </div>
+        <div>
+          <label for="d5">5</label>
+          <input type="radio" name="diceNum" id="d5" value="5">
+        </div>
+        <div>
+          <label for="d6">6</label>
+          <input type="radio" name="diceNum" id="d6" value="6">
+        </div>
+      </section>
       <section id="btns">
-        <button id="btn1" onclick="print(1)">
-          버튼1
-        </button>
-        <button id="btn2" onclick="print(2)">
-          버튼2
+        <button id="btn1" onclick="show();">
+          주사위 눈 맞추기
         </button>
         
       </section>
+      
     </main>
   </div>
 </body>
