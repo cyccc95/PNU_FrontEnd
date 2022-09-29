@@ -52,7 +52,7 @@ main {
   font-size: 30px;
 }
 
-#answer {
+#answerSection {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -62,7 +62,7 @@ main {
 }
 
 #btnSection {
-  height: 70%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -78,11 +78,20 @@ button {
   max-height: 50px;
   background-color: #3d8361;
   color: #eef2e6;
+  margin-bottom: 10px;
 }
 
 button:hover, button:active {
   background-color: #D6CDA4;
   color: #3d8361;
+}
+
+#rateSection {
+  height: 30%;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  display: none;
 }
 
 
