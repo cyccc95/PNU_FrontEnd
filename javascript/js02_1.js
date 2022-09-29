@@ -19,38 +19,48 @@
 //   msgId.innerHTML = newDiv;
 
 
+let btn;
+let formSection;
+let diceSection;
+let answerSection;
+let count, win; // 판수, 이긴판
+let level; // 승률에 따른 레벨
+
+
+
 /** DOM 요소가 생성된 후에 실행 */
 document.addEventListener("DOMContentLoaded", () => {
-
+  btn = document.querySelector('#btn');
+  formSection = document.querySelector('#formSection');
+  diceSection = document.querySelector('#diceSection');
+  answerSection = document.querySelector('#answerSection');
+  count = 0;
+  win = 0;
 })
 
 const getAnswer = (event) => {
   const value = event.target.value; // 선택한 눈
-  const btn = document.querySelector('#btn');
-  const formSection = document.querySelector('#formSection');
-  const diceSection = document.querySelector('#diceSection');
-  const answer = document.querySelector('#answer');
 
   let randomNum = Math.floor(Math.random()*6)+1; // 1~6 랜덤 정수 생성
   
   formSection.style.display = 'none'; 
-  answer.style.display = 'flex';
+  answerSection.style.display = 'flex';
   diceSection.innerHTML = `<div><img src="../image/${randomNum}.png"></div>`;
+  // value와 랜덤 정수 비교해서 answer 출력
   if(value == randomNum){
-    answer.innerHTML = `<div><img src="../image/o.png"></div>`;
+    answerSection.innerHTML = `<div><img src="../image/o.png"></div>`;
+    count++;
+    win++;
   } else {
-    answer.innerHTML = `<div><img src="../image/x.png"></div>`;
+    answerSection.innerHTML = `<div><img src="../image/x.png"></div>`;
+    count++;
   }
   btn.innerHTML = '한번 더?';
   
 }
 
 const show = () => {
-  const btn = document.querySelector('#btn');
-  const formSection = document.querySelector('#formSection');
-  const diceSection = document.querySelector('#diceSection');
-  const answer = document.querySelector('#answer');
-
+  
   let form = ``;
   for(let i = 0; i < 6; i++){
     form += `
@@ -67,9 +77,35 @@ const show = () => {
   // 결과 화면에서 버튼 한번 더 누르면 실행
   if(formSection.style.display == 'none'){
     formSection.style.display = 'flex';
-    answer.style.display = 'none';
+    answerSection.style.display = 'none';
     diceSection.innerHTML = '';
     
   }
   
+}
+
+
+
+// 전적보기 함수
+const showRate = () => {
+  const rateSection = document.querySelector('#rateSection');
+
+  // level 나누는 계산
+  if(Math.round(win/count*100) >= 70){
+    level = "오.. 고수";
+  } else if(Math.round(win/count*100) >= 20 && Math.round(win/count*100) < 70) {
+    level = "평민";
+  } else {
+    level = "ㅋㅋ.. 접으셈";
+  }
+
+  rateSection.innerHTML = `
+    <div>
+      ${win}승 ${count-win}패 ${Math.round(win/count*100)}% 
+    </div>
+    <div>
+      ${level}
+    </div>
+  `
+  rateSection.style.display = 'block';
 }
