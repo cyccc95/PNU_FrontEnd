@@ -56,5 +56,9 @@
 + 주사위 게임 전적 기능 추가
 + layout 복습
 
+### 22.09.30
++ arrange project directory
++ javascript string, array function
+
 
 <!-- 미리보기 ctrl + shift + v -->
