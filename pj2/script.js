@@ -69,15 +69,15 @@ const getAnswer = (e) => {
   
   formSection.style.display = 'none'; 
   answerSection.style.display = 'flex';
-  diceSection.innerHTML = `<div><img src="${randomNum}.png"></div>`;
+  diceSection.innerHTML = `<div><img src="image/${randomNum}.png"></div>`;
   
   // value와 랜덤 정수 비교해서 answer 출력
   if(value == randomNum){
-    answerSection.innerHTML = `<div><img src="o.png"></div>`;
+    answerSection.innerHTML = `<div><img src="image/o.png"></div>`;
     count++; // 판수 +1
     win++;   // 승수 +1
   } else {
-    answerSection.innerHTML = `<div><img src="x.png"></div>`;
+    answerSection.innerHTML = `<div><img src="image/x.png"></div>`;
     count++; // 판수 +1
   }
 
