@@ -60,5 +60,8 @@
 + arrange project directory
 + javascript string, array function
 
+### 22.10.04
++ Boom game
+
 
 <!-- 미리보기 ctrl + shift + v -->
