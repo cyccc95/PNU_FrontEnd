@@ -61,7 +61,7 @@
 + javascript string, array function
 
 ### 22.10.04
-+ complete boom game
++ complete bomb game
 
 
 <!-- 미리보기 ctrl + shift + v -->
